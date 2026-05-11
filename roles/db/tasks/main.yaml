@@ -1,5 +1,5 @@
 - name: install the mysql-server
-  ansible.builtin.dnf:\
+  ansible.builtin.dnf:
     name: mysql-server
     state: latest
 
