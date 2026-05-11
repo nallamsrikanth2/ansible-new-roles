@@ -5,7 +5,7 @@
     credentials.yaml
   vars_prompt:
     name: password
-    prompt: enter the passwprd?
+    prompt: enter the password?
     private: false
   roles:
   - backend
