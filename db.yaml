@@ -1,6 +1,9 @@
 - name: congigure the db server
   hosts: db
   become: yes
+  vars_prompt:
+    - name: password
+      prompt: enter your password?
+      private: false
   roles:
   - db
-  
