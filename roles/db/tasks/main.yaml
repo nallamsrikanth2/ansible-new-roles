@@ -13,7 +13,7 @@
   ansible.builtin.pip:
     name:
     - pymysql
-    - crypotography
+    - cryptography
     executable: pip3.9
 
 - name: check root password setup or not
