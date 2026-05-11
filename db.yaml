@@ -1,6 +1,8 @@
 - name: congigure the db server
   hosts: db
   become: yes
+  vars_files:
+    credentials.yaml
   vars_prompt:
     - name: password
       prompt: enter your password?
