@@ -49,6 +49,13 @@
     state: started
     enabled: yes
 
+- name: install the python dependencies
+  ansible.builtin.pip:
+    name: 
+    - pymysql
+    - cryptography
+    executable: pip3.9
+
 - name: load the schema
   community.mysql.mysql_db:
     login_user: "{{login_user}}"
