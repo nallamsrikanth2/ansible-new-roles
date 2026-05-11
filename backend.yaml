@@ -3,9 +3,5 @@
   become: yes
   vars_files:
     credentials.yaml
-  vars_prompt:
-    name: password
-    prompt: enter the password?
-    private: false
   roles:
   - backend
